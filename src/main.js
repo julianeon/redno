@@ -43,7 +43,7 @@ const SayColor = () => {
     }, []);
 	
     return (
-	    <p>{data.body[steps]}{steps === data.body.length ? setSteps(steps=>0) : "" }</p>
+	    <p>{steps === data.body.length ? setSteps(steps=>0) : data.body[steps] }</p>
     );
     
 }
